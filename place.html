@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="/styles/place.css">
+    <script src="/script/place.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header> 
+    <p class="line"></p>
+    <main>
+        <div class="container">
+            <p></p>
+            <picture >
+                <source class="hero" media="(min-width:750px )" srcset="/images/arara-large.webp">
+                <source class="hero" media="(min-width:650px )" srcset="/images/arara-medium.webp">
+                <img  class="hero" src="/images/arara-medium.webp" alt=" Arara">
+            </picture>
+            <p class="line"></p>
+            <section class="data">
+                <div >
+                    <h3>Data</h3>
+                </div>
+                <p><strong>Area:</strong> 8.515.767 km²</p>
+                <p><strong>Population:</strong> 212.583.750</p>
+                <p><strong>Capital:</strong> Brasília</p>
+                <p><strong>language:</strong> Português</p>
+                <p><strong>Currency:</strong> Real (BRL)</p>
+                <p><strong>Time Zone:</strong> UTC-3</p>
+                <p><strong>Calling Code:</strong> +55</p>
+                <p><strong>Internet TLD:</strong> .br</p>
+            </section>
+            <section class="weather">
+                <div >            
+                    <h3>Weather</h3>
+                    <img src="/images/weather.svg" alt="icon description" width="40px">
+                </div>
+                <p id="temperature"></p>
+                <p id="conditions"></p>
+                <p id="wind"></p>
+                <p id="wind-chill"></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🦗 Hallan Luis Mota Miranda 🦗 Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

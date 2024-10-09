@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-text);
+}
+
+body{
+  background-color: #000000;
+}
+
+:root {
+  --primary-color: #009440;
+  --secondary-color: #ffcb00;
+  --third-color: #302681;
+  --text-color: #ffffff;
+  --font-text: "Rubik", sans-serif;
+}
+header{
+  background-color: var(--third-color);
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1{
+  text-align: center;
+  color: var(--text-color);
+}
+.container{
+  position: relative;
+}
+.hero{
+  position: relative;
+  max-width: 100vw;
+}
+
+picture{
+  position: relative;
+}
+
+section{
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 13rem;
+}
+
+.weather section{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: rgba(255, 203, 0, 0,);
+  padding: 10px;
+}
+
+.data section{
+  text-align: left;
+  background-color: rgba(255, 203, 0, 0,);
+  width: 12rem;
+  height: 3rem;
+}
+
+section.data{
+  padding: 10px;
+}
+
+section.weather{
+  padding: 10px;
+}
+
+.weather{
+  position: absolute;
+  right: 36px;
+  bottom: 48px;
+}
+
+.weather div{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-color);
+}
+
+.weather div h3{
+  margin: 10px 10px 0px 5px;
+}
+
+h3{
+  color: var(--text-color);
+}
+
+p{
+  margin: 3px 0px;
+}
+
+.data{
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
+
+.data div{
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+
+footer{
+  background-color: var(--third-color);
+  height: 70px;
+}
+
+footer p{
+  text-align: center;
+  color: var(--text-color);
+  margin-block: auto;
+}
+
+.line{
+  width: 100vw;
+  background-color: var(--secondary-color);
+  height: 10px;
+}
+
+@media screen and (max-width: 750px){
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+
+}
+  .data, .weather {
+    position: static;
+  }
+  
+  h3, p{
+    text-align: center;
+    color: #000000;
+
+  }
+
+  .weather div, .data div{
+    display: flex;    
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  section img{
+    width: 90px;
+  }
+
+  section{
+    width: 80vw;
+    margin-inline: auto;
+    border-top: 1px solid #333;
+
+  }
+}
