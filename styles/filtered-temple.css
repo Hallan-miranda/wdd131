@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-text);
+}
+
+
+:root {
+  --primary-color: #161D6F;
+  --secondary-color: #0B2F9F;
+  --third-color: #98DED9;
+  --text-color: #ffffff;
+  --font-text: "Rubik", sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 25px;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 45px;
+}
+
+.links{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  list-style: none;
+}
+
+
+
+h1, a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: overline;
+ }
+.hamburger {
+  display: none;
+  z-index: 1;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 750px){
+  .hamburger{
+    display: block;
+  }
+
+  .links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-color);
+    padding-bottom: 30vh;
+    clip-path: circle(100px at 90% -35%);
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+    pointer-events: none;
+
+
+  }
+
+  nav.active .links{
+    clip-path: circle(1500px at 90% -15%);
+  }
+
+}
+
+h2{
+  text-align: center;
+  margin-block: 15px;
+}
+
+main{
+  padding: 40px;
+}
+
+.temple{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+}
+
+.card p, h3{
+  text-align: center;
+  
+}
+
+.card{
+  width: 400px;
+  margin-inline: auto;
+}
+
+footer{
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+footer p{
+  font-size: 21px;
+  padding: 3px;
+}
+
+#lastModified{
+  font-size: 15px;
+  color: var(--third-color);
+  padding: 2px;
+}
