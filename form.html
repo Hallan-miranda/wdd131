@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <link rel="stylesheet" href="/Desenvolvimento/wdd131/styles/form.css">
+    <script src="/Desenvolvimento/wdd131/script/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="Product">Product Name</label>
+            <select class="select" name="product" id="Product" required>
+                <option value="" disabled selected> Select a product...</option>
+            </select>
+            <p>Overall Rating</p>
+            <div class="radio">
+                <label class="item1" for="1">✩</label>
+                <input class="item2" type="radio" name="star" id="1">
+                <label class="item3" for="2">✩✩</label>
+                <input class="item4" type="radio" name="star" id="2">
+                <label class="item5" for="3">✩✩✩</label>
+                <input class="item6" type="radio" name="star" id="3">
+                <label class="item7" for="4">✩✩✩✩</label>
+                <input class="item8" type="radio" name="star" id="4">
+                <label class="item9" for="5">✩✩✩✩✩</label>
+                <input clas="item10" type="radio" name="star" id="5">
+            </div>
+
+            <label for="Installation">Date of Installation</label>
+            <input type="date" name="date" id="Installation">
+
+            <p>Which features did you find useful in the product?<br>(check all that apply)</p>
+            <div class="checkbox">
+                <input type="checkbox" name="durability" id="durability">
+                <label for="durability">Durability</label>
+                <input type="checkbox" name="ease of use" id="ease of use">
+                <label for="ease of use">Ease of Use</label>
+                <input type="checkbox" name="performance" id="performance">
+                <label for="performance">Performance</label>
+                <input type="checkbox" name="desing" id="desing">
+                <label for="desing">Desing</label>
+            </div>
+
+            <label for="Review">Written Review</label>
+            <textarea type="text" name="Review" id="Review"></textarea>
+
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name">
+
+            <button type="submit">Submit</button>
+
+        </form>
+        
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🦗 Hallan Luis Mota Miranda 🦗 Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
